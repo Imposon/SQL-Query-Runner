@@ -1,27 +1,31 @@
-# 🧩 SQL Query Runner
+# 🧩 SQL Query Runner  
 
-## 🚀 Overview
+### 👥 Group Name: Robust  
+
+---
+
+## 🚀 Overview  
 **SQL Query Runner** is a web-based tool that allows users to **execute SQL queries directly from their browser**, similar to MySQL Workbench — but lightweight and browser-based.  
-It connects to a **Node.js + Prisma backend** using **SQLite**, enabling **real-time query execution, table creation, and result visualization** through a **React frontend interface**.
+It connects to a **Node.js + Prisma backend** using **SQLite**, enabling **real-time query execution, table creation, and result visualization** through a **React frontend interface**.  
 
 ---
 
-## 🧠 Ideation Document
+## 🧠 Ideation Document  
 
-### 🏁 Problem Statement
+### 🏁 Problem Statement  
 Students and developers often find it tedious to install and configure full database environments (like MySQL Workbench, PgAdmin, etc.) just to practice SQL.  
-There’s a need for a simple, browser-based platform to **write, execute, and visualize SQL queries** instantly without setup hassle.
+There’s a need for a simple, browser-based platform to **write, execute, and visualize SQL queries** instantly without setup hassle.  
 
 ---
 
-### 💡 Proposed Solution
+### 💡 Proposed Solution  
 SQL Query Runner provides an **interactive browser interface** to run SQL commands.  
 The backend uses **Prisma ORM** to communicate with an SQLite database, and the frontend (React) displays query results in a clean, tabular form.  
-Users can perform all major SQL operations like **CREATE**, **INSERT**, **UPDATE**, **DELETE**, and **SELECT**, making it ideal for both learning and quick testing.
+Users can perform all major SQL operations like **CREATE**, **INSERT**, **UPDATE**, **DELETE**, and **SELECT**, making it ideal for both learning and quick testing.  
 
 ---
 
-### 🧰 Tech Stack
+### 🧰 Tech Stack  
 
 | Layer | Technology Used |
 |-------|------------------|
@@ -41,26 +45,48 @@ Users can perform all major SQL operations like **CREATE**, **INSERT**, **UPDATE
 | **Sahil Singh** | Backend Developer | Built Node.js + Express backend for handling SQL query execution, integrated Prisma/Sequelize ORM, implemented API routes for database connectivity (MySQL, PostgreSQL, SQLite) |
 | **AN Pavan Sai** | Database & Testing Engineer | Configured database connections, tested query executions and data visualization, implemented export/import (CSV, Excel, PDF) and random table generation features |
 
-
 ---
 
-### 🎯 Expected Outcome
+### 🎯 Expected Outcome  
 - Users can **run SQL queries directly in the browser** without local database setup.  
 - The system supports **query execution, result visualization, and error handling**.  
 - Provides an **intuitive interface** for learning and testing SQL concepts.  
-- Acts as a lightweight alternative to heavy SQL clients like Workbench.
+- Acts as a lightweight alternative to heavy SQL clients like Workbench.  
 
 ---
 
-## ⚙️ Setup Instructions
+## 📈 Project Progress  
 
-### 🧩 Prerequisites
+### ✅ Completed So Far  
+- Project ideation and documentation finalized.  
+- Frontend setup using **React.js** completed.  
+- Backend server setup using **Node.js + Express** done.  
+- Integrated **Prisma ORM with SQLite** for query handling.  
+- Built working prototype for executing **basic SQL commands** (`CREATE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`).  
+- Implemented **query result display** in tabular format.  
+- Connected frontend with backend APIs using Axios.  
+- Successfully tested query execution and error handling flow.  
+
+### 🚀 Next Steps  
+- Convert the current web version into a **Chrome Extension** version.  
+- Add **query auto-completion and syntax highlighting** using CodeMirror.  
+- Implement **query history and re-run feature**.  
+- Enable **exporting results** (CSV, Excel, PDF).  
+- Add **authentication system** for secure access.  
+- Optimize database handling for **MySQL and PostgreSQL** support.  
+- UI polishing and responsive design improvements.  
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 🧩 Prerequisites  
 - Node.js (v18 or higher)  
 - npm (v8 or higher)
 
 ---
 
-### 🔧 Backend Setup
+### 🔧 Backend Setup  
 ```bash
 cd backend
 npm install

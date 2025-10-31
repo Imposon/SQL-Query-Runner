@@ -72,14 +72,16 @@ erDiagram
     DATABASE_CONNECTION ||--o{ QUERY : "runs on"
     DATABASE_CONNECTION ||--o{ TABLE_SCHEMA : "defines"
 ```
-###🧠 Design Notes
+### 🧠 Design Notes
+
 The User entity acts as the central node for authentication and personalization.
 Each user can have multiple database connections (MySQL, PostgreSQL, SQLite).
 Queries are linked both to a user and the database they were executed on.
 TableSchema helps the frontend’s auto-completion feature suggest table and column names.
 QueryHistory provides re-run and revision tracking for executed SQL commands.
 
-###💎 Code Quality Practices
+### 💎 Code Quality Practices
+
 **Clean Architecture**: Separated frontend/ and backend/ layers with independent responsibilities.
 **Naming Consistency**: Followed camelCase for variables and PascalCase for components.
 **Error Handling**: Implemented structured try–catch blocks with user-friendly error feedback.
